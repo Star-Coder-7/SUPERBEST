@@ -3,18 +3,18 @@
 {% block title %}Home{% endblock %}
 
 {% block messages %}
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-    {% for message in messages %}
-    {{ message }}
-    {% endfor %}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-{% endif %}
-{% endwith %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endif %}
+    {% endwith %}
 {% endblock %}
 
 {% block content %}

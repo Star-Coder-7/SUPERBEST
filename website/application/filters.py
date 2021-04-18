@@ -9,11 +9,10 @@ def _slice(iterable, pattern):
     :param pattern: string ex (::-1)
     :return: string
     """
-
     if iterable is None or isinstance(iterable, Undefined):
         return iterable
 
-    # Convert to list so we can slice
+    # convert to list so we can slice
     items = str(iterable)
 
     start = None
