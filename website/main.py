@@ -1,11 +1,9 @@
-from flask import session
 from flask_socketio import SocketIO
-import time
 from application import create_app
 from application.database import DataBase
 import config
 
-# SETUP
+# SETUP FLASK APP
 app = create_app()
 socketio = SocketIO(app)  # used for user communication
 
